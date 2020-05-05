@@ -1,0 +1,41 @@
+<style>
+#color-button {
+  border-radius: 2px;
+  font-size: 24px;
+  margin: 20px;
+  padding: 12px;
+  outline: none;
+}
+</style>
+<button id ="color-button">色が変わるボタン</button>
+<script>
+// ボタン要素を取得します
+const button = document.getElementById("color-button");
+// 最初は赤から始まるので、ボタンの色を赤に設定しています
+button.style.backgroundColor = "red";
+// 赤色になっていることを変数に保存
+let color = "red";
+// ボタンがクリックされた度に行う処理を登録します
+button.addEventListener("click", () => {
+  switch(color) {
+  case "red":
+    // 次の色に変更します
+    button.style.backgroundColor = "blue";
+    // 変更後の色を覚えておくために、変数に設定します
+    color = "blue";
+    break;
+  case "blue":
+    button.style.backgroundColor = "yellow";
+    color = "yellow";
+    break;
+  case "yellow":
+    button.style.backgroundColor = "red";
+    color = "red";
+    break;
+  default:
+    console.error("想定されていない色です(¯―¯٥)");
+    break;
+  }
+});
+</script>
+
