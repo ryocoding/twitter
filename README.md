@@ -1,1 +1,1 @@
-[twitter.com/ryo_coding](https://twitter.com/ryo_coding) への投稿に関するリポジトリです。
+[twitter.com/ryocoding](https://twitter.com/ryocoding) への投稿に関するリポジトリです。
